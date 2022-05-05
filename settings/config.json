@@ -1,0 +1,18 @@
+{
+"controls": {
+  "KEY_UP": "w",
+  "KEY_DOWN": "s",
+  "KEY_LEFT": "a",
+  "KEY_RIGHT": "d",
+  "SHOOT": "z",
+  "BOMB": "x",
+  "FOCUS": "shift"
+},
+  "window": {
+    "width": 1280,
+    "height": 720
+  },
+  "game": {
+    "fps": 60
+  }
+}
