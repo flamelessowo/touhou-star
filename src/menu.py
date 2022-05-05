@@ -4,7 +4,7 @@
 
 
 from pathlib import Path
-
+from tkinter import font
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
@@ -49,7 +49,7 @@ canvas.create_text(
     anchor="nw",
     text="(c) Alisa-kun & flameless",
     fill="#000000",
-    font=("Milonga Regular", 36 * -1)
+    font=font.Font(family="Chiller", size=42 * -1, weight='bold')
 )
 
 button_image_1 = PhotoImage(
@@ -69,12 +69,12 @@ button_1.place(
 )
 
 canvas.create_text(
-    720.0,
+    650.0,
     15.0,
     anchor="nw",
     text="Touhou star *",
     fill="#B92D2D",
-    font=("Milonga Regular", 90 * -1)
+    font=font.Font(family="SimSun", size=90 * -1, weight='bold')
 )
 
 button_image_2 = PhotoImage(
