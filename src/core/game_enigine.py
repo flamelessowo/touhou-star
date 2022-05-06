@@ -1,13 +1,20 @@
+import pygame
 import pygame as pg
-from src.helpers import json_helper
-
-config = json_helper.read_config('../../settings/config.json', 'window')
 
 
 class Game:
-    def __init__(self) -> None:
+    done = False
+
+    def __init__(self, width, height) -> None:
         pg.init()
-        pg.display.set_mode(config['width'], config['height'])
+        pg.display.set_mode((width, height))
+        pg.display.set_caption('Touhou *')
+        self.clock = pg.time.Clock()
 
     def run(self) -> None:
-        pass
+        while not self.done:
+            for event in pg.event.get():
+                if event.type == pygame.QUIT:
+                    self.done = True
+
+            pygame.display.flip()
